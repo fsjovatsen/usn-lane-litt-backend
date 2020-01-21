@@ -10,6 +10,7 @@ class UserController
 {
 
     public function getUsers() {
+        sleep(2);
         return new JsonResponse(
             array(
                 array(
@@ -25,7 +26,7 @@ class UserController
                 array(
                     "username" => "michael",
                     "passwrod" => "michael12",
-                    "fullName" => "Micael Rønnevik"
+                    "fullName" => "Micael Ronnevik"
                 )
             )
         );
